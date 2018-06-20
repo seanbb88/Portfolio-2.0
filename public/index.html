@@ -6,14 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sean Brown</title>
-    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
 </head>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial;
+        font-size: 17px;
+    }
 
+    #myVideo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+    }
+</style>
 
 <body>
 
+    <video width="400" contols autoplay id="myVideo" poster="./media/WATER-2.jpg">
+        <source src="./media//water-medium.mp4" type="video/mp4">
+    </video>
 
 
     <a href="/about">
@@ -21,14 +38,17 @@
    
     <br>
     <a href="/portfolio">
-        <button class="button-style">Portfolio </a> </button>
+        <button id="second-button"class="button-style">Portfolio </a> </button>
    
     <br>
     <a href="/contact">
-        <button class="button-style">Contact </a> </button>
+        <button id="third-button" class="button-style">Contact </a> </button>
    
 
-    <script src="/js/index.js"></script>
+    <script src="./js/index.js"></script>
+
+  
+
 </body>
 
 

@@ -1,20 +1,32 @@
-body {
-    background-image: url(../media/water.jpg); 
+@keyframes fadeInUp {
+    from {
+        opacity: 0; 
+        -webkit-transform: translate3d(0, 100%, 0); 
+        transfrom: translate3d(0, 100%, 0); 
+    }
+
+    to {
+        opacity: 1; 
+        -webkit-transform: none; 
+        transform: none; 
+    }
 }
+
 
 .button-style {
     margin-left: 250px; 
     border: none; 
     background: transparent; 
-    font-size: 30px; 
+    font-size: 24px; 
     color: white; 
-    display: none; 
-    margin-top: 20px; 
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;   
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  
+    text-decoration: none; 
+    position: absolute; 
 }
 
 a {
     text-decoration: none; 
+    color: white;
 }
 
 a:visited {
@@ -22,5 +34,24 @@ a:visited {
 }
 
 #first-button {
-    margin-top: 250px; 
+    margin-top: 225px;
+    opacity: 0; 
+    animation: fadeInUp 3s ease-in-out 0s forwards; 
+    animation-delay: 6s;  
 }
+
+#second-button {
+    margin-top: 260px;
+    opacity: 0; 
+    animation: fadeInUp 3s ease-in-out 0s forwards; 
+    animation-delay: 8s;
+}
+
+#third-button {
+    margin-top: 290px;
+    opacity: 0; 
+    animation: fadeInUp 3s ease-in-out 0s forwards;
+    animation-delay: 10s;
+}
+
+
