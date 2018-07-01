@@ -20,17 +20,18 @@ html {
 
 /* Content Body */ 
 .main-div {
-    width: 60%; 
-    height: 425px;
+    width: 80%; 
+    height: 475px;
     margin: auto;
     margin-top: 80px;  
-    background-image: url("../media/transparent.jpg");
+    background-image: url("../media/transparent2.jpg");
     background-repeat: no-repeat; 
     background-size: 100% 100%;  
     border-radius: 25px; 
     opacity: 0; 
     animation: fadeInUp 1s ease-in-out 0s forwards; 
-    animation-delay: 1s;  
+    animation-delay: 1s; 
+ 
     
 }
 
@@ -42,36 +43,66 @@ html {
     height: 40px;
     border-bottom: 1px  rgb(15, 15, 49) solid; 
     line-height: 40px;  
-    font-size: 24px; 
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif; 
     
 }
 
 /*Bio */
 .about-me{ 
     font-size: 14px; 
-    width: 80%; 
+    width: 90%; 
     margin: auto;  
     margin-top: 15px; 
     display: flex; 
     flex-direction: row-reverse; 
     justify-content: space-between; 
+    font-family: Arial, Helvetica, sans-serif; 
     
 }
 
 .bio {
-    width: 70%; 
-    height: 200px; 
-    margin-top: 20px; 
+    width: 40%; 
+    height: 300px; 
+    margin-top: 50px; 
     margin-left: 13px; 
     font-size: 13px; 
 }
 
 /*languages */
 .languages {
-    border: black solid 1px; 
-    width: 50%; 
-    height: 40px;
-    margin-left: 280px; 
+    width: 10%; 
+    height: 335px;
+    display: flex; 
+    flex-direction: column; 
+    font-size: 44px;
+    margin-left: 15px;
+    justify-content: space-between;
+   
+}
+
+.languages2 {
+    width: 10%; 
+    height: 335px;
+    display: flex; 
+    flex-direction: column; 
+    font-size: 44px;
+    margin-left: 15px; 
+    justify-content: space-evenly;
+}
+
+.languages3 {
+    width: 10%; 
+    height: 335px;
+    display: flex; 
+    flex-direction: column; 
+    font-size: 44px;
+    margin-left: 40px; 
+    justify-content: space-between;
+}
+
+.lang:hover{
+    font-size: 60px; 
 }
 
 /*Pic and Links*/
@@ -83,8 +114,8 @@ html {
 
 /*Profile Pic */
 .profile-pic {
-    width: 180px;
-    height: 210px;
+    width: 220px;
+    height: 265px;
     display: block; 
     margin-top: 20px;
     border: 1px solid rgb(15, 15, 49); 
@@ -95,19 +126,33 @@ html {
 .links{
     list-style-type: none; 
     display: flex; 
-    
+}
 
+.home-btn:hover {
+    font-size: 30px; 
+    color: black; 
 }
 
 a {
+    text-decoration: none;
+    color: black; 
+}
+
+.linkz:hover{
+    color: goldenrod;  
+}
+
+
+a:visited {
     text-decoration: none;
 }
 
 .links-div {
     display: flex; 
     flex-direction: row; 
-    margin-top: 50px; 
+    margin-top: 14px; 
     position: relative; 
+    text-decoration: none;
 }
 
 li {

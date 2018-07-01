@@ -20,11 +20,11 @@ html {
 
 /* Content Body */
 .main-div { 
-    width: 60%; 
-    height: 400px;
+    width: 80%; 
+    height: 475px;
     margin: auto;
     margin-top: 80px;
-    background-image: url("../media/transparent.jpg");
+    background-image: url("../media/transparent2.jpg");
     background-repeat: no-repeat; 
     background-size: 100% 100%; 
     border-radius: 25px; 
@@ -42,7 +42,8 @@ html {
     height: 40px;
     border-bottom: 1px  rgb(15, 15, 49) solid; 
     line-height: 40px;  
-    font-size: 24px; 
+    font-size: 30px; 
+    font-family: Arial, Helvetica, sans-serif; 
 }
 
 /* Portfolio Links */
@@ -71,7 +72,7 @@ html {
 
 .portfolio-link-display {
     width: 65%; 
-    height: 368px; 
+    height: 437px; 
     position: relative; 
     
 }
@@ -81,17 +82,31 @@ html {
     width: 100%; 
 }
 
+.portfolio-button:hover{
+    color: white; 
+    background-color: navy;
+}
+
 /* Portfolio Buttons */
 .portfolio-button {
-    width: 80%; 
+    width: 60%; 
+    height: 30px;
     margin-left: 20px; 
     background: transparent; 
     border: 1px rgb(15, 15, 49) solid; 
     border-radius: 25px; 
-    color: white; 
+    color: black; 
     font-size: 15px; 
-    text-align: left; 
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;  
 
+}
+
+.portfolio-button:hover{
+    color: white; 
+    background-color: navy;
+    width: 75%; 
+    height: 45px;
 }
 
 #first-button{
@@ -115,11 +130,58 @@ html {
 }
 
 p {
-    color: white; 
-    font-size: 12px; 
+    color: black; 
+    font-size: 14px;  
     margin-right: 10px; 
 }
 
+/* links n shiz */
+.links{
+    list-style-type: none; 
+    display: flex; 
+}
+
+.home-btn:hover {
+    font-size: 30px; 
+    color: black; 
+}
+
+.linkz:hover{
+    color: goldenrod;  
+}
+
+.links-div {
+    display: flex; 
+    flex-direction: row; 
+    margin-top: 390px; 
+    position: relative; 
+    text-decoration: none;
+}
+
+.linkin {
+    color: rgb(14, 14, 151); 
+}
+
+.git-it {
+    color: rgb(163, 52, 52); 
+}
+
+.emailz {
+    color: rgb(46, 162, 216); 
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: black; 
+}
+
+li {
+    margin-right: 35px; 
+}
 /* app display divs */
 
 #setlistr {
@@ -150,19 +212,6 @@ p {
     visibility: hidden;
 }
 
-
-/*
-.m-fadeOut {
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s linear 300ms, opacity 300ms;
-  }
-.m-fadeIn {
-    visibility: visible;
-    opacity: 1;
-    transition: visibility 0s linear 0s, opacity 300ms;
-  }
-  */
 
   @media screen and (max-width: 800px){
 

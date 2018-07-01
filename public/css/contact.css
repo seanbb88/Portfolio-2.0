@@ -1,7 +1,7 @@
 html {
     background-image: url(../media/WATER-2.jpg); 
     background-repeat: no-repeat;
-    background-size: 100% 600px; 
+    background-size: 100% 600px;   
 }
 
 @keyframes fadeInUp {
@@ -42,6 +42,7 @@ html {
     border-bottom: 1px  rgb(15, 15, 49) solid; 
     line-height: 40px;  
     font-size: 24px; 
+    font-family: Arial, Helvetica, sans-serif; 
 }
 
 /* Contact Form */
@@ -49,11 +50,14 @@ html {
  margin-left: 45px;  
  display: block;  
  margin-top: 35px; 
+ font-family: Arial, Helvetica, sans-serif; 
 }
 
 .form-input{
     margin-bottom: 15px;
-    background-color: rgb(175, 200, 238); 
+    background-color: rgb(175, 200, 238);
+    border: white 1px solid; 
+    font-family: Arial, Helvetica, sans-serif; 
 }
 
 textarea{
@@ -94,11 +98,21 @@ a {
     text-decoration: none;
 }
 
+a:visited {
+    text-decoration: none; 
+}
+
+.submit-contact:hover{
+    background-color: lightblue;
+    border: none; 
+}
+
 .links-div {
     display: flex; 
     flex-direction: row; 
     margin-top: 53px; 
     position: relative; 
+    text-decoration: none; 
 }
 
 li {
